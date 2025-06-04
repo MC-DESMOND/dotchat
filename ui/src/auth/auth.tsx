@@ -1,6 +1,10 @@
+import BaseHOC from "../addons/HOC";
 
 
 
-function Auth(){
+export default function Auth(){
+    const base = new BaseHOC()
+    return <base._>
     
+    </base._>
 }
