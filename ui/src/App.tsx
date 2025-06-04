@@ -1,11 +1,17 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import BaseHOC from './addons/HOC'
+import { BaseElement, Div } from './addons/csml'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  const base = new BaseHOC()
+  // console.log(BaseElement({tag:"div", stringify:true, width:"20px",borderRadius:"20px"}))
+  useEffect(()=>{
+    
+  })
   return (
     <>
       <div>
